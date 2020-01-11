@@ -51,8 +51,8 @@ body {
 }
 .grid {
 	display: grid;
-    	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    	grid-template-rows: repeat(3, 368px);
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-rows: repeat(3, 368px);
 	grid-gap: 57px;
 }
 .grid >*{
@@ -150,7 +150,7 @@ h1 {
 }
 
 
-@media (min-width:768px) {
+@media (min-width:767px) and (max-width:1223px){
 .grid{
 	grid-template-columns: 1fr 1fr;
 }
