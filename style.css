@@ -51,8 +51,8 @@ body {
 }
 .grid {
 	display: grid;
-	grid-template-columns: 370px 370px 370px;
-	grid-template-rows: 368px 368px 368px;
+    	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    	grid-template-rows: repeat(3, 368px);
 	grid-gap: 57px;
 }
 .grid >*{
