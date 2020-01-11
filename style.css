@@ -154,8 +154,5 @@ h1 {
 .grid{
 	grid-template-columns: 1fr 1fr;
 }
-h1 {
-	font-size: 0.8em;
-}
 
 }
