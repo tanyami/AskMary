@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 370px 370px 370px;
+	grid-template-rows: 368px 368px 368px;
+	grid-gap: 57px;
+}
+.grid >*{
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 24px 31px 32px 32px;	
+}
+h1 {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+	font-family: 'Kanit', sans-serif;
+	padding-bottom: 1em;
+}
+.grid__box ul {
+	position: relative;
+	margin-bottom: 28px;
+}
+.grid__box ul li {
+	line-height: 24px;
+	margin-top: 10px;
+}
+.listitem-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.form_control {
+	background: #fff;
+	font-size: 1em;
+	line-height: 24px;
+	font-weight: bold;
+	border: 1px solid #DADADA;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: #000;
+	padding: 12px 16px;
+	width: 246px;
+	margin: 0 30px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.grid__box_form button {
+	font-size: 0.7em;
+	font-weight: bold;
+	line-height: 24px;
+	width: 146px;
+	height: 48px;
+	background: #fff;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0992414);
+	border-radius: 24px;
+	padding: : 14px 27px 10px 25px;
+	color: #333333;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.grid__box_form .left{ 
+	color: #333333;	
+}
+.grid__box_form .right{ 
+	color: #2DCC70;
+}
+.grid__box_form hr {
+	width: 228px;
+	height: 1px;
+	background: #E9E9E9;
+	border: none;
+	margin-bottom: 16px;
+}
+.grid__box_flower {
+	background: linear-gradient(180deg, #00CDAC 0%, #02AAB0 100%);	
+}
+.grid__box_edible {
+    background: linear-gradient(180deg, #FF9966 0%, #FF5E62 100%);
+}
+.grid__box_vape {
+	background: linear-gradient(180deg, #6F86D6 0%, #48C6EF 100%);
+}
+.grid__box_tinture {
+	background: linear-gradient(180deg, #42275A 0%, #734B6D 100%);
+}	
+.grid__box_pre-roll {
+	background: linear-gradient(180deg, #80D0C7 0%, #13547A 100%);
+}
+.grid__box_concentrate {
+	background: linear-gradient(180deg, #4568DC 0%, #B06AB3 100%);
+}
+.grid__box_drink {
+	background: linear-gradient(180deg, #000428 0%, #004E92 100%);
+}
+.grid__box_patch {
+	background: linear-gradient(180deg, #CC2B5E 0%, #753A88 100%);
+}
+.grid__box_topical {
+	background: linear-gradient(180deg, #2B5876 0%, #4E4376 100%);
+}
+
+
+@media (max-width:768px) {
+.grid{
+	grid-template-columns: 1fr 1fr;
+}
+h1 {
+	font-size: 0.8em;
+}
+
+}
