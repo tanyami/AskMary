@@ -1,4 +1,4 @@
-html, body, div, span, h1, p, a,ul, li, form{
+html, body, div, span, h1, p, ul, li, form {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,7 +6,6 @@ html, body, div, span, h1, p, a,ul, li, form{
 	font: inherit;
 	vertical-align: baseline;
 }
-
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
@@ -15,6 +14,8 @@ body {
 	line-height: 1;
 }
 .grid {
+	max-width: 1224px;
+	margin: auto;
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-template-rows: repeat(3, 368px);
@@ -46,12 +47,6 @@ h1 {
 	right: 0;
 	bottom: 0;
 }
-.grid__box_button {
-	width: 80%;
-	margin: auto; 
-	/*display: table;
-	clear: both;*/
-}
 .form_control {
 	display: block;
 	background: #fff;
@@ -67,9 +62,12 @@ h1 {
 	margin: auto;
 	font-family: 'Josefin Sans', sans-serif;
 }
-
+.grid__box_button {
+	display: flex;
+	justify-content: center;
+}
 .grid__box_button button {
-	font-size: 0.7em;
+	font-size: 0.875rem;
 	font-weight: bold;
 	line-height: 24px;
 	width: 146px;
@@ -78,16 +76,19 @@ h1 {
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.0992414);
 	border-radius: 24px;
 	padding: : 14px 27px 10px 25px;
-	color: #333333;
 	font-family: 'Josefin Sans', sans-serif;
+	border-width: 0px;
 }
 .grid__box_button .left{ 
 	color: #333333;	
-	float: left;
+	
 }
 .grid__box_button .right{ 
-	color: #2DCC70;
-	float: right;
+	color: #2DCC70;	
+}
+input::placeholder {
+  color: #000;
+  font-size: 1.25rem;
 }
 hr {
 	width: 228px;
@@ -123,12 +124,27 @@ hr {
 .grid__box_topical {
 	background: linear-gradient(180deg, #2B5876 0%, #4E4376 100%);
 }
-
-
-@media (min-width:767px) and (max-width:1223px){
-.grid{
+@media (min-width:797px) and (max-width:1223px){
+.grid {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 25px;
+	max-width: 797px;
+	margin: auto;
 }
 }
+@media (max-width:796px){
+.grid {
+	grid-template-columns: 1fr;
+	max-width: 370px;
+	margin: auto; 
+}
+.grid__box_button button {
+	width: 136px;	
+}
+}
+.grid__box_button > button+button {
+	margin-left: 19px;
+}
+}
+
 
