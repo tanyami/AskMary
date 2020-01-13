@@ -64,6 +64,8 @@ h1 {
 }
 .grid__box_button {
 	display: flex;
+	display: -webkit-flex;
+	display:-ms-flexbox;
 	justify-content: center;
 }
 .grid__box_button button {
