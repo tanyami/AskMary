@@ -31,17 +31,21 @@ h1 {
 	line-height: 32px;
 	letter-spacing: 1px;
 	font-family: 'Kanit', sans-serif;
-	padding-bottom: 20px;
+	
 }
-
+.grid__box p {
+	font-size: 1.25rem;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
 .grid__box ul {
 	position: relative;
-	margin-bottom: 28px;
+	margin-bottom: 38px;
 	list-style: none;
 }
 .grid__box ul li {
 	line-height: 24px;
-	margin-top: 10px;
+	padding-bottom: 10px;
 }
 .listitem-right {
 	position: absolute;
@@ -98,6 +102,7 @@ hr {
 	height: 1px;
 	background: #E9E9E9;
 	border: none;
+	margin-top: 10px;
 	margin-bottom: 16px;
 }
 .grid__box_flower {
